@@ -1,3 +1,9 @@
+:root {
+	--container-max-width: 1263px;
+	--pagination-dots-gap: 17.54px;
+	--pagination-arrow-margin: 29.5px;
+}
+
 html,
 body {
 	margin: 0;
@@ -9,8 +15,13 @@ body {
 	box-sizing: border-box;
 }
 
+section {
+	margin: 0;
+	padding: 0;
+}
+
 .container {
-	max-width: 1263px;
+	max-width: var(--container-max-width);
 	margin: 0 auto;
 }
 
@@ -36,6 +47,16 @@ body {
 	font-size: 40px;
 	line-height: 53px;
 	color: white;
+}
+
+h2.title {
+	font-size: 27px;
+}
+
+h3.title {
+	font-size: 18px;
+	/* Fix line-height when the context doesn't fit on the title */
+	line-height: 25px;
 }
 
 .button-outlined {
@@ -98,6 +119,10 @@ body {
 .dark {
 	color: white;
 }
+
+:not(.dark) .title {
+	color: #E3B873;
+}
 /* /dark */
 
 /* hero */
@@ -136,3 +161,100 @@ body {
 	margin-left: 20px;
 }
 /* /hero */
+
+/* completed-projects */
+.completed-projects {
+	background-color: #131313;
+}
+
+.completed-projects .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	height: 100%;
+}
+
+.completed-projects__repair-details-wrapper {
+	padding: 45px 27px;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.repair-details {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px 0;
+	max-width: 365px;
+}
+
+.completed-projects__pagination {
+	display: flex;
+	flex-direction: column-reverse;
+	/* align-items: center; */
+	height: 100%;
+}
+
+.pagination__dots {
+	display: inline-block;
+}
+
+.pagination__dots .pagination__dot {
+	display: inline-block;
+	cursor: pointer;
+	margin: 2.5px calc(var(--pagination-dots-gap) / 2);
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	width: 9.57px;
+	height: 9.57px;
+}
+
+.pagination__dots .pagination__dot.active {
+	background: white;
+}
+
+.pagination__arrow-left,
+.pagination__arrow-right {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.pagination__arrow-left {
+	margin-right: calc(var(--pagination-arrow-margin) - calc(var(--pagination-dots-gap) / 2))
+}
+
+.pagination__arrow-right {
+	margin-left: calc(var(--pagination-arrow-margin) - calc(var(--pagination-dots-gap) / 2))
+}
+
+.completed-projects__tabs {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	padding-left: 0;
+}
+
+.completed-projects__tabs a {
+	font-family: "Yeseva One";
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.completed-projects__tabs a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.completed-projects__tabs a.active {
+	color: #E3B873;
+	border-bottom: 1px solid #E3B873;
+}
+
+.completed-projects__image {
+	display: none;
+}
+
+.completed-projects__image.active {
+	display: block;
+}
+/* /completed-projects */
