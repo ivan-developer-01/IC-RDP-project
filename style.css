@@ -112,6 +112,11 @@ hr.divider {
 	background: transparent;
 }
 
+.section-icon {
+	margin-bottom: 31px;
+	margin-top: 13px;
+}
+
 .icon-line {
 	display: inline-block;
 	width: 32px;
@@ -366,7 +371,7 @@ p {
 	align-items: center;
 }
 
-.online-control .container div:not(.icon-line),
+.online-control .container div:not(.icon-line, .section-icon),
 .online-control .container p {
 	margin: 0 auto;
 }
@@ -409,6 +414,7 @@ p {
 .submit-button {
 	min-width: 200px;
 	min-height: 51px;
+	font-style: normal;
 }
 
 form .row {
@@ -422,3 +428,59 @@ form {
 	margin-top: 91.5px;
 }
 /* /online-control */
+
+/* types-of-repair */
+.types-of-repair .container {
+	margin-top: 75.85px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.example-title {
+	font-size: 18px;
+	color: #363636;
+	text-transform: none;
+	line-height: 138.6%;
+}
+
+.types-of-repair__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.types-of-repair__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.types-of-repair__description {
+	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+	/* top, right, bottom, left */
+	padding: 25px 32px 36px 31px;
+	max-width: 330px;
+	margin: 0 auto;
+	margin-top: calc(-392px + 294px);
+	background: #FFF;
+	min-width: 330px;
+}
+
+.types-of-repair__example-characteristics {
+	margin: 0;
+	margin-top: 13px;
+	list-style-position: inside;
+	padding: 0;
+	color: #959595;
+}
+
+.types-of-repair .button {
+	max-width: fit-content;
+	padding: 17px 21.44px;
+	margin-left: 33px;
+	margin-top: calc(-50px / 2);
+	box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
+	font-style: normal;
+}
+/* /types-of-repair */
