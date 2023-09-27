@@ -25,6 +25,37 @@ section {
 	margin: 0 auto;
 }
 
+.checkbox-label {
+	cursor: pointer;
+	margin: 0 auto;
+	margin-top: 33.24px;
+}
+
+.checkbox {
+	display: none;
+}
+
+.fake {
+	display: inline-flex;
+	width: 18px;
+	height: 18px;
+	background: #E3B873;
+	color: #FFF;
+	justify-content: center;
+	margin-right: 8.62px;
+	border-radius: 1px;
+}
+
+.fake::before {
+	content: "\2714";
+	opacity: 0;
+	transition: .2s;
+}
+
+.checkbox:checked + .fake::before {
+	opacity: 1;
+}
+
 .button {
 	background-color: #E3B873;
 	color: white;
@@ -381,48 +412,18 @@ p {
 	line-height: 204.6%;
 }
 
-.checkbox-label {
-	cursor: pointer;
-	margin: 0 auto;
-	margin-top: 33.24px;
-}
-
-.checkbox {
-	display: none;
-}
-
-.fake {
-	display: inline-flex;
-	width: 18px;
-	height: 18px;
-	background: #E3B873;
-	color: #fff;
-	justify-content: center;
-	margin-right: 8.62px;
-}
-
-.fake::before {
-	content: "\2714";
-	opacity: 0;
-	transition: .2s;
-}
-
-.checkbox:checked + .fake::before {
-	opacity: 1;
-}
-
 .submit-button {
 	min-width: 200px;
 	min-height: 51px;
 	font-style: normal;
 }
 
-form .row {
+.online-control form .row {
 	display: flex;
 	justify-content: space-between;
 }
 
-form {
+.online-control form {
 	max-width: 679px;
 	margin: 0 auto;
 	margin-top: 91.5px;
@@ -436,6 +437,26 @@ form {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	/* max-width: 100%; */
+}
+
+.types-of-repair {
+	position: relative;
+}
+
+.types-of-repair .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image: url(images/request-background.png);
+	/* background-size: cover; */
+	background-size: 803px 598px;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	/* opacity: 0.2; */
 }
 
 .example-title {
@@ -476,11 +497,152 @@ form {
 }
 
 .types-of-repair .button {
-	max-width: fit-content;
 	padding: 17px 21.44px;
-	margin-left: 33px;
-	margin-top: calc(-50px / 2);
 	box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
 	font-style: normal;
+}
+
+.types-of-repair .button-card {
+	max-width: fit-content;
+	margin-left: 33px;
+	margin-top: calc(-50px / 2);
+}
+
+/* .types-of-repair__request-steps-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+} */
+
+.types-of-repair__request {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 219.19px;
+	margin-top: 124px;
+	max-width: 100%;
+	max-height: 725.44px;
+	position: relative;
+	width: 100%;
+}
+
+.types-of-repair__request-steps {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	max-height: 473.62px;
+	width: 100%;
+}
+
+
+.types-of-repair__request-step {
+	display: flex;
+	align-items: center;
+}
+
+.types-of-repair__request-step .step-number {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background: #E3B873;
+	width: 41.76px;
+	height: 41.76px;
+	border-radius: 50%;
+	color: #FFF;
+	font-size: 18px;
+	font-family: "Yeseva One", 'Times New Roman', Times, serif;
+	font-style: normal;
+	line-height: 138.6%;
+	border: 8px solid #FFF;
+	box-shadow: 0px 5px 15px 0px rgba(227,184,115, 0.15);
+	/* fixing the padding */
+	padding: calc(13px + 6px) calc(14px + 5px);
+}
+
+.types-of-repair__request-step .step-text {
+	display: inline-block;
+	margin-left: 17.05px;
+	font-size: 14px;
+}
+
+.save-the-cost {
+	margin-top: 38.44px;
+	margin-left: 33.5px;
+}
+
+.save-the-cost-icon {
+	display: inline-flex;
+	background: #E3B873;
+	height: 72px;
+	width: 72px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 10px 20px 0px rgba(237, 192, 120, 0.2);
+}
+
+.save-the-cost-text {
+	display: inline-block;
+	color: #E3B873;
+	font-size: 18px;
+	max-width: 210px;
+	/* The syntax of box-shadow is (x-offset, y-offset, blur-radius, spread-radius, color) */
+	box-shadow: 0px 3px 10px 0px rgba(237, 192, 120, 0.15);
+	margin-left: 25px;
+}
+
+.types-of-repair__request-form form {
+	background: #000;
+	padding-left: 49px;
+	padding-right: 49px;
+	padding-top: 28px;
+	padding: 28px 49px 27px 49px;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.types-of-repair__request-form form .checkbox-label {
+	margin: 16px 0 0 0;
+	align-self: start;
+}
+
+.types-of-repair__request-form form .button {
+	align-self: flex-end;
+	margin-top: 39px;
+}
+
+.types-of-repair__request-form form .subtitle {
+	text-transform: none;
+	max-width: 211px;
+	align-self: center;
+	text-align: center;
+	font-family: "Nunito Sans", 'Times New Roman', Times, serif;
+}
+
+.types-of-repair__request-form form .input-wrapper {
+	margin-top: 39px;
+}
+
+.types-of-repair__request-form form .input-wrapper hr {
+	color: rgba(255, 255, 255, 0.15);
+	margin-top: 3px;
+}
+
+.types-of-repair__request-form form .input {
+	background: transparent;
+	color: #FFF;
+}
+
+.types-of-repair__request-form form .input::placeholder {
+	color: #FFF;
+}
+
+.types-of-repair__request-form form label {
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.types-of-repair__request-form form .checkbox-label {
+	color: #FFF;
 }
 /* /types-of-repair */
