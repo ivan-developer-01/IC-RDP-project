@@ -416,7 +416,7 @@ p {
 	align-items: center;
 }
 
-.online-control .container div:not(.icon-line, .section-icon),
+.online-control .container div:not(.icon-line, .section-icon, .input-wrapper),
 .online-control .container p {
 	margin: 0 auto;
 }
@@ -652,7 +652,7 @@ p {
 }
 
 .types-of-repair__request-form form label {
-	color: rgba(255, 255, 255, 0.5)
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .types-of-repair__request-form form .checkbox-label {

@@ -108,4 +108,64 @@
 		font-size: 14px;
 	}
 	/* /completed-projects */
+
+	/* online-control */
+	.online-control {
+		background: #131313;
+		color: #FFF;
+	}
+	
+	.online-control__video-image,
+	.online-control__video-image img {
+		width: 100%;
+	}
+
+	.online-control .play-button {
+		width: 37px;
+		height: 37px;
+	}
+
+	.online-control .play-button::before {
+		margin: calc(calc(37px - 12.19px) / 2) calc(calc(37px - calc(12.19px - 5px)) / 2);
+		width: 12.19px;
+		height: 12.19px;
+		background-image: url(images/play-button-small.svg);
+	}
+
+	.online-control form label:not(.checkbox-label) {
+		color: rgba(255, 255, 255, 0.5)
+	}
+
+	.online-control .input-wrapper {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		width: 100%;
+	}
+
+	.online-control .input-wrapper:not(:first-child) {
+		margin-top: 63px;
+	}
+	
+	.online-control .input {
+		background: transparent;
+	}
+
+	.online-control .input::placeholder {
+		color: #FFF;
+	}
+
+	.online-control .last-two {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.online-control .last-two .checkbox-label {
+		order: 1;
+	}
+
+	.online-control .last-two .button {
+		order: 2;
+		position: relative;
+		top: calc(51px / 2);
+	}
+	/* /online-control */
 }
