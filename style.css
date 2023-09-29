@@ -253,11 +253,20 @@ p {
 
 .hero p {
 	font-size: 22px;
+	max-width: 502px;
 }
 
 .hero .button {
-	height: 51px;
+	margin: 41px 20px;
 	margin-left: 20px;
+}
+
+.hero .button:first-of-type {
+	margin-left: 0;
+}
+
+.hero .title {
+	max-width: 521px;
 }
 /* /hero */
 
