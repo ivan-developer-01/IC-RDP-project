@@ -1,4 +1,10 @@
 @media screen and (max-width: 1300px) {
+	/* main styles */
+	section {
+		padding: 0 18px;
+	}
+	/* /main styles */
+
 	/* header */
 	.header {
 		padding: 0 18px;
