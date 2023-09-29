@@ -1,7 +1,20 @@
+.completed-projects__mobile-slider {
+	display: none;
+}
+
 @media screen and (max-width: 1300px) {
 	/* main styles */
 	section {
 		padding: 0 18px;
+	}
+
+	p {
+		font-size: 11px;
+	}
+
+	h2.title {
+		font-size: 22px;
+		line-height: 30.49px;
 	}
 	/* /main styles */
 
@@ -39,4 +52,60 @@
 		margin-top: 26px;
 	}
 	/* /hero */
+
+	/* completed-projects */
+	.completed-projects .container {
+		display: block;
+		text-align: center;
+	}
+	.completed-projects .completed-projects__slider {
+		display: none;
+	}
+
+	.completed-projects .completed-projects__pagination {
+		display: none;
+	}
+
+	.completed-projects .completed-projects__mobile-slider {
+		display: block;
+		position: relative;
+		max-width: 100%;
+		margin-top: 36px;
+		margin-bottom: 36.45px;
+	}
+
+	.completed-projects .completed-projects__mobile-slider .completed-projects__image {
+		width: 100%;
+	}
+
+	.completed-projects .completed-projects__mobile-slider-controls {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 14px;
+		position: absolute;
+		top: calc(50% - calc(36px / 2));
+	}
+
+	.completed-projects .completed-projects__mobile-slider-arrow {
+		background: #E3B873;
+		cursor: pointer;
+		height: 36px;
+		width: 36px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.completed-projects .repair-details {
+		text-align: left;
+		gap: 31px;
+	}
+
+	.completed-projects .repair-details h3 {
+		margin-bottom: 13px;
+		font-size: 14px;
+	}
+	/* /completed-projects */
 }
