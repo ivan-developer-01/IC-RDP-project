@@ -454,7 +454,7 @@ p {
 	background-image: url(images/request-background.png);
 	/* background-size: cover; */
 	background-size: 803px 598px;
-	background-position: 0 100%;
+	background-position: 0 90%;
 	background-repeat: no-repeat;
 	/* opacity: 0.2; */
 }
@@ -645,6 +645,81 @@ p {
 	color: #FFF;
 }
 /* /types-of-repair */
+
+/* we-realize */
+.we-realize {
+	margin-top: 242.09px;
+	position: relative;
+	background: unset;
+	z-index: 1;
+}
+
+.we-realize .overlay {
+	background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.90) 100%), url(images/we-realize/we-realize_bg.png);
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.we-realize .container,
+.we-realize .we-realize__images {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.we-realize .container {
+	gap: 77px;
+}
+
+.we-realize .title {
+	margin-top: 137.47px;
+}
+
+.we-realize .we-realize__tabs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.we-realize .we-realize__tabs li {
+	margin-top: 25px;
+}
+
+.we-realize .we-realize__tabs li a {
+	text-transform: none;
+	color: #FFF;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.we-realize .we-realize__tabs li a.active {
+	color: #E3B873;
+	border-bottom: 0.66px solid #E3B873;
+}
+
+.we-realize .we-realize__images {
+	gap: 43.19px;
+}
+
+.we-realize .we-realize__images .column {
+	display: grid;
+	gap: 36.77px;
+}
+
+.we-realize .we-realize__images .column:nth-child(even) {
+	margin-top: -113px;
+}
+
+.we-realize .we-realize__images .column:nth-child(odd) {
+	margin-top: -41px;
+	gap: 39.12px;
+	margin-bottom: -41px;
+}
+/* /we-realize */
 
 /* our-clients */
 .our-clients .container {
