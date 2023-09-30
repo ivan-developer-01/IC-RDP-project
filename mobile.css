@@ -193,5 +193,9 @@
 	.types-of-repair .types-of-repair__image img {
 		width: calc(calc(392px - calc(18px * 4)) + 10px);
 	}
+
+	.types-of-repair__request {
+		display: none;
+	}
 	/* /types-of-repair */
 }
