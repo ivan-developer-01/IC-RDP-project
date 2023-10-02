@@ -733,6 +733,10 @@ p {
 	gap: 39.12px;
 	margin-bottom: -41px;
 }
+
+.we-realize .we-realize__mobile-slider-controls {
+	display: none;
+}
 /* /we-realize */
 
 /* our-clients */
