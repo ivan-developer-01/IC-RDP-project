@@ -62,10 +62,7 @@
 		display: block;
 		text-align: center;
 	}
-	.completed-projects .completed-projects__slider {
-		display: none;
-	}
-
+	.completed-projects .completed-projects__slider,
 	.completed-projects .completed-projects__pagination {
 		display: none;
 	}
@@ -103,6 +100,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.completed-projects .completed-projects__repair-details-wrapper {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.completed-projects .repair-details {
