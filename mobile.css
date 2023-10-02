@@ -264,4 +264,10 @@
 		margin-bottom: 0 !important;
 	}
 	/* /we-realize */
+
+	/* our-clients */
+	.our-clients {
+		display: none;
+	}
+	/* /our-clients */
 }
