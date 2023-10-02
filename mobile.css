@@ -204,6 +204,10 @@
 	.types-of-repair__request {
 		display: none;
 	}
+
+	.types-of-repair .overlay {
+		display: none;
+	}
 	/* /types-of-repair */
 
 	/* we-realize */
