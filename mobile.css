@@ -209,7 +209,7 @@
 	/* we-realize */
 	.we-realize {
 		background: unset;
-		margin-top: 0;
+		margin-top: 55px;
 	}
 
 	.we-realize .container,
@@ -263,7 +263,5 @@
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 	}
-	
 	/* /we-realize */
-
 }
