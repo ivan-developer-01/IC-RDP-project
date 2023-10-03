@@ -71,7 +71,8 @@
 	.we-realize .we-realize__slider {
 		display: block;
 		position: relative;
-		max-width: 100%;
+		max-width: 768px;
+		margin: 0 auto;
 		margin-top: 36px;
 		margin-bottom: 36.45px;
 	}
@@ -110,6 +111,8 @@
 	.completed-projects .repair-details {
 		text-align: left;
 		gap: 31px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.completed-projects .repair-details h3 {
