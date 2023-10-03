@@ -145,6 +145,11 @@
 		color: rgba(255, 255, 255, 0.5)
 	}
 
+	.online-control form .row {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.online-control .input-wrapper {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 		width: 100%;
@@ -162,17 +167,17 @@
 		color: #FFF;
 	}
 
-	.online-control .last-two {
-		display: flex;
-		flex-direction: column;
+	.online-control form .checkbox-label {
+		display: none;
 	}
 
-	.online-control .last-two .checkbox-label {
-		order: 1;
+	.online-control form .mobile-checkbox-label {
+		display: block;
+		order: 3;
 	}
 
-	.online-control .last-two .button {
-		order: 2;
+	.online-control form .button {
+		order: 4;
 		position: relative;
 		top: calc(51px / 2);
 	}

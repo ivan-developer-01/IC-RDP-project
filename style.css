@@ -436,15 +436,24 @@ p {
 	font-style: normal;
 }
 
+.online-control form {
+	max-width: 679px;
+	margin: 0 auto;
+	margin-top: 91.5px;
+}
+
 .online-control form .row {
 	display: flex;
 	justify-content: space-between;
 }
 
-.online-control form {
-	max-width: 679px;
-	margin: 0 auto;
-	margin-top: 91.5px;
+.online-control form .checkbox-label:not(.mobile-checkbox-label) {
+	position: relative;
+	top: 33.24px;
+}
+
+.online-control form .mobile-checkbox-label {
+	display: none;
 }
 /* /online-control */
 

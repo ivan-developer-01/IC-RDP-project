@@ -156,27 +156,33 @@
 				</p>
 
 				<form>
-						<div class="input-wrapper">
-							<label for="name_input">Name</label>
-							<br>
-							<input type="text" class="input" id="name_input" placeholder="What is your name:">
-						</div>
-
-						<div class="input-wrapper">
-							<label for="phone_input">Phone</label>
-							<br>
-							<input type="tel" class="input" id="phone_input" placeholder="Your phone number:">
-						</div>
-
-						<div class="last-two">
+						<div class="row">
+							<div class="input-wrapper">
+								<label for="name_input">Name</label>
+								<br>
+								<input type="text" class="input" id="name_input" placeholder="What is your name:">
+							</div>
+	
+							<div class="input-wrapper">
+								<label for="phone_input">Phone</label>
+								<br>
+								<input type="tel" class="input" id="phone_input" placeholder="Your phone number:">
+							</div>
+							
 							<button type="submit" class="button submit-button">Submit</button>
 
-							<label class="checkbox-label">
+							<label class="checkbox-label mobile-checkbox-label">
 								<input type="checkbox" class="checkbox" required checked>
 								<span class="fake"></span>
 								<span class="text">I agree to the processing of personal data</span>
 							</label>
 						</div>
+
+						<label class="checkbox-label">
+							<input type="checkbox" class="checkbox" required checked>
+							<span class="fake"></span>
+							<span class="text">I agree to the processing of personal data</span>
+						</label>
 				</form>
 			</div>
 		</section>
