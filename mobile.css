@@ -354,4 +354,10 @@
 		gap: 20.89px;
 	}
 	/* /have-any-questions */
+
+	/* footer */
+	.footer {
+		display: none;
+	}
+	/* /footer */
 }
